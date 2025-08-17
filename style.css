@@ -1,0 +1,229 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #f8f9fa;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Navbar */
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 15px 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: transparent;
+  transition: background 0.3s ease;
+  z-index: 1000;
+}
+.navbar.scrolled {
+  background: #ff4747;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+.navbar .logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: white;
+}
+.navbar ul {
+  display: flex;
+  list-style: none;
+}
+.navbar ul li {
+  margin: 0 15px;
+  font-weight: 500;
+}
+.navbar ul li a {
+  color: white;
+  text-decoration: none;
+}
+.navbar .cart {
+  background: white;
+  color: #ff4747;
+  padding: 5px 12px;
+  border-radius: 20px;
+  font-weight: bold;
+}
+
+/* Hero Section */
+.hero {
+  height: 90vh;
+  background: url("https://plus.unsplash.com/premium_photo-1670984940113-f3aa1cd1309a?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzN8fHJlc3RhdXJhbnR8ZW58MHx8MHx8fDA%3D") no-repeat center center/cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.hero::after {
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0,0,0,0.5);
+}
+.hero-content {
+  position: relative;
+  text-align: center;
+  color: white;
+  animation: fadeInUp 1s ease;
+}
+.hero-content h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+.hero-content p {
+  margin-bottom: 20px;
+}
+.cta-btn {
+  padding: 12px 25px;
+  border: none;
+  background: #ff6347;
+  color: white;
+  border-radius: 25px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.cta-btn:hover {
+  background: #e5533d;
+}
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.testimonial-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.testimonial-card {
+  background: white;
+  padding: 20px;
+  max-width: 300px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  border-radius: 8px;
+  text-align: center;
+}
+
+
+  
+
+/* About Section */
+.about {
+  padding: 200px 20 px;
+  background: #fff8f0;
+  text-align: center;
+  background:#fff8f0
+
+}
+
+.about h2 {
+  font-size: 3rem;
+  font-weight: bold;
+  color: ff5722;
+  margin-bottom: 50px;
+  color: #e63939;
+  font-family: 'poppins', sans-serif;
+  
+}
+
+.about p {
+  font-size:   2rem;
+  line-height: 1.8;
+  max-width: 4.6 ;
+  color: #444;
+  max-width:900px;
+  margin: 40px auto;
+  font-family: 'Roboto' , sans-serif;
+  margin: 0 auto;
+  letter-spacing: 0.5px;
+  font-weight: 400;
+}
+
+/* Menu Section */
+.menu {
+  padding: 60px 20px;
+  text-align: center;
+}
+.menu h2 {
+  margin-bottom: 30px;
+  font-size: 2rem;
+  color: #ff6347;
+}
+.menu-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+.card {
+  background: white;
+  border-radius: 15px;
+  overflow: hidden;
+  transition: transform 0.3s, box-shadow 0.3s;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+.card h3 {
+  margin: 15px 0 5px;
+}
+.card p {
+  color: #777;
+  margin-bottom: 10px;
+}
+.card button {
+  margin-bottom: 15px;
+  padding: 8px 15px;
+  border: none;
+  background: #ff6347;
+  color: white;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.card button:hover {
+  background: #e5533d;
+}
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+}
+
+/* Contact Section */
+.contact {
+  padding: 50px 20px;
+  text-align: center;
+  background: #fff;
+}
+.contact h2 {
+  color: #ff6347;
+  margin-bottom: 15px;
+}
+
+/* Footer */
+footer {
+  background: #222;
+  color: #ccc;
+  padding: 20px;
+  text-align: center;
+}
+footer a {
+  margin: 0 10px;
+  color: #ff6347;
+  text-decoration: none;
+}
+footer a:hover {
+  text-decoration: underline;
+}
